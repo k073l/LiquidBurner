@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.5-SNAPSHOT'
+    id 'fabric-loom' version '1.8.3'
     id 'maven-publish'
 }
 
@@ -59,7 +59,7 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modImplementation "maven.modrinth:create-fabric:0.5.1-f-build.1335+mc1.20.1"
+    modImplementation "maven.modrinth:create-fabric:0.5.1-j-build.1604+mc1.20.1"
 
     modImplementation("com.tterrag.registrate_fabric:Registrate:$registrate_version") {
         exclude(group: "io.github.fabricators_of_create") // avoid duplicate Porting Lib
